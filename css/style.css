@@ -1,0 +1,270 @@
+/* 
+.header__container, .main__container {
+    max-width: 1230px;
+    margin: 0 auto;
+} */
+
+[class *=__container]{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+[class *=__title]{
+    font-weight: 900;
+    font-size: 46px;
+    color: #1E212C;
+}
+
+[class *= __description]{
+  max-width: 600px;   
+}
+
+body{
+    color: #424551;
+    line-height: 160%;
+    padding: 80px 0;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 4px;
+}
+
+/* ------------------------ */
+
+.main-list ul li::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/check.png) no-repeat 0px 0;
+    margin: 0 16px 0 0;
+    
+}
+
+
+/* -------------------------------- */
+.header {
+    margin: 0 0 48px 0;
+    
+}
+
+.header__title {
+    margin-bottom: 40px;
+}
+
+
+.main-list__title {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+.main__list {
+    margin-bottom: 50px;
+}
+
+main{
+    margin-bottom: 150px;
+}
+
+.main-curator {
+}
+.main-curator__subtitle {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.main-curator__title {
+    margin-bottom: 16px;
+    padding: 10px 0;
+}
+.main-curator__specialisation {
+    font-size: 20px;
+    color: #787A80;
+    margin-bottom: 32px;
+}
+
+
+.main-curator__achivements li:first-child::before{
+    content: '';
+    background: url(../img/icons/star.png) no-repeat 0 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.main-curator__achivements li:nth-child(2)::before{
+    content: '';
+    background: url(../img/icons/Vector.png) no-repeat 0 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.main-curator__achivements li:last-child::before{
+    content: '';
+    background: url(../img/icons/Vector-1.png) no-repeat 0 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+
+.main-curator__achivements{
+    margin-bottom: 32px;
+}
+
+/* ================ПСЕВДОЕЛЕМЕНТИ СТИЛЮ================= */
+
+.main-list h2:hover:first-of-type{
+    display: inline-block;
+    color: rgb(165, 43, 43);
+    border-bottom: 3px dotted rgb(165, 43, 43);
+}
+
+h1:hover::before{
+    content:'';
+    background: url(../img/1282917.png) center/cover no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+h1:hover::after{
+    content: 'if you click - the headline will disappear';
+    margin: 0 0 0 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+h1:active{
+    visibility: hidden;
+}
+
+.main__list li:first-child:active{
+    letter-spacing: 2px;
+    margin: 0 0 0 50px;
+}
+
+
+.main__list li:nth-child(3):hover{
+    color: #9e141d;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.main__list li:nth-child(3):active::after{
+    content: 'Are you sure you wanna click here';
+    font-size: 20px;
+    margin-left: 50px;
+    color: red;
+}
+
+
+.main__list li:hover:nth-child(4)::after{
+    content: 'if you click here, this text will explode. Do not do it!!';
+    margin: 0 0 0 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 5px 3px 20px #9e141d;
+}
+
+.main__list li:active:nth-child(4)::after{
+    background: url(../img/1282917.png) center/cover repeat-x;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ---------------GAME--------------- */
+
+.footer {
+}
+.footer__block {
+    padding-bottom: 300px;
+}
+.footer__body {
+}
+
+.rules{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.rules li:not(:last-child){
+    margin: 0 0 10px 0;
+}
+
+.calltoaction {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.start {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    background-color: #2443a0;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+
+.thegame {
+    
+}
+.first__line {
+    display: inline-block;
+    height: 250px;
+    width: 15px;
+    margin: 0 0 0 50px;
+}
+
+.first__line:hover{
+    background-color: #2443a0;
+}
+
+.second__line{
+    display: inline-block;
+    width: 250px;
+    height: 15px;
+}
+
+.second__line:hover{
+    background-color: #9e141d;
+}
+
+.third__line{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+}
+
+.third__line:hover{
+    background-color: red;
+}
+
+.third__line:active::after{
+    content: url(../img/1282917.png);
+    display: block;
+}
+
+
+
+
+/* ------------------------------ */
+
+.rules li:hover:not(:nth-child(3)){
+    color: #2443a0;
+    text-transform: uppercase;
+}
+
+
+
